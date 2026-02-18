@@ -1,0 +1,113 @@
+p {
+  color:rgb(224, 72, 112);
+  padding:0px 0px 0px 30px;
+  margin-bottom:10px ;
+  font-size:20px ;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.show {
+    opacity: 1;
+}
+
+
+h2 {
+    color:rgb(74, 172, 139);
+    padding:0px 0px 0px 15px;
+    margin-top:30px ;
+    font-size:30px ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform-origin: left center;
+}
+h2:hover {
+    transform: scale(1.1);
+}
+
+
+body {
+  background: linear-gradient(120deg, #FFFACD, #FFDAB9);
+  font-family:"comic sans MS", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  animation: bgGradient 10s ease infinite alternate;
+}
+
+@keyframes bgGradient {
+  0% {
+    background: linear-gradient(120deg, #FFFACD, #FFDAB9);
+  }
+  50% {
+    background: linear-gradient(120deg, #FFDAB9, #FFB6C1);
+  }
+  100% {
+    background: linear-gradient(120deg, #FFFACD, #FFDAB9);
+  }
+}
+/*body{
+    background-color: #FFFACD;
+    font-family:"comic sans MS", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}*/
+
+
+h1{
+    font-size: 50px;
+    margin: 50px auto;
+    padding:10px;
+    width: fit-content;
+    background-color: rgb(248, 131, 164);
+    text-align: center;
+    border-radius: 35px; 
+    animation: h1Slide 1s ease-out;
+}
+@keyframes h1Slide {
+   0% {
+    transform: translatey(-100px);
+    opacity: 0;
+   }
+   100%{
+    transform: translatey(0);
+    opacity: 1;
+   }
+}
+
+
+img{
+    width:auto ;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 100px;
+    animation: floatImage 3s ease-in-out infinite alternate;
+}
+@keyframes floatImage {
+    0%{
+        transform: translatey(0);
+    }
+    100% {
+        transform: translatey(-20px);
+    }
+}
+
+
+
+.content_container{
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    margin: auto;
+}
+button{
+    font-size: 20px;
+    font-family:"comic sans MS", Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    background-color: rgb(248, 131, 164);
+    color: rgb(136, 48, 162);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
